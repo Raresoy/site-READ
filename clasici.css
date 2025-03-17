@@ -1,0 +1,252 @@
+body {
+    background-color: lemonchiffon;
+    color: #333;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f6ddcc;
+    border-top: 3px solid #333;
+}
+
+header {
+    background-color: #f6ddcc;
+    padding: 20px;
+    text-align: center;
+    color: #3d5a80;
+    border-bottom: 3px solid #333;
+}
+
+header > p {
+    font-style: italic;
+    text-decoration: underline;
+    color: #333;
+    animation: aparitie 1s;
+}
+
+header > h1 {
+    animation: aparitie 1s;
+}
+
+section {
+    animation: aparitie 2s;
+}
+
+@keyframes aparitie {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+nav {
+    background-color: #f6ddcc;
+    text-align: center;
+}
+
+ul.meniu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+
+ul.meniu > li {
+    position: relative;
+    margin: 0 10px;
+}
+
+ul.meniu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    background-color: #f6ddcc;
+    transition: background-color 0.3s;
+}
+
+ul.meniu > li > a:hover {
+    background-color: #575757;
+}
+
+ul.submeniu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 100%;
+    left: 50%;
+    background-color: #FFE4E1;
+    display: none;
+    z-index: 1000;
+    color: #333;
+}
+
+ul.meniu > li {
+    border-bottom: 1px solid #555;
+}
+
+ul.submeniu > li > a {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+ul.submeniu > li > a:hover {
+    background-color: #575757;
+}
+
+ul.meniu > li:hover > ul.submeniu {
+    display: block;
+}
+
+footer > h3::after {
+    content: "🙃";
+}
+
+footer > h4::after {
+    content: "📖";
+}
+
+footer > h5::after {
+    content: "🆓";
+}
+
+footer > h6::after {
+    content: "🧵";
+}
+
+main {
+    padding: 20px;
+    background-color: lemonchiffon;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover {
+    background-color: #f6ddcc;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+img:hover{
+    animation: shake 0.5s; 
+}
+  
+
+.grid-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 15px;
+    grid-template-areas:
+        "poza poza poza poza poza sinopsis sinopsis sinopsis sinopsis sinopsis"
+        "video video video video video curiozitati curiozitati curiozitati curiozitati curiozitati"
+        "cumpara cumpara cumpara cumpara cumpara cumpara cumpara cumpara cumpara cumpara";
+}
+
+#poza {
+    grid-area: poza;
+}
+
+#sinopsis {
+    grid-area: sinopsis;
+}
+
+#video {
+    grid-area: video;
+}
+
+#curiozitati{
+    grid-area: curiozitati;
+}
+
+#cumpara {
+    grid-area: cumpara;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    color: #3d5a80;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3d5a80;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "poza"
+            "sinopsis"
+            "video"
+            "curiozitati"
+            "cumpara";
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "poza"
+            "sinopsis"
+            "video"
+            "curiozitati"
+            "cumpara";
+    }
+}
+
+
+

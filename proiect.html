@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>READ</title>
+    <link rel="stylesheet" href="proiect.css" media="(min-width: 600px)">
+    <link rel="icon" type="image/png" href="poze/carticica.png">
+    <script type="text/javascript" src="proiect.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Locul potrivit pentru când nu știi ce să citești!</h1>
+        <p>Te afli intr-un reading slump? Rămâi alături de noi pentru a te scoate din această încurcătură!</p>
+    </header>
+    
+    <nav>
+        <ul class="meniu">
+            <li><a href="proiect.html" class="nav-link">Acasă</a></li>
+            <li>
+                <a href="clasici.html" class="nav-link">Clasici</a>
+                <ul class="submeniu">
+                    <li><a href="clasici.html#sinopsis">Sinopsis</a></li>
+                    <li><a href="clasici.html#video">Video</a></li>
+                    <li><a href="clasici.html#cumpara">Cumpără!</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="fantasy.html" class="nav-link">Fantasy</a>
+                <ul class="submeniu">
+                    <li><a href="fantasy.html#sinopsis">Sinopsis</a></li>
+                    <li><a href="fantasy.html#video">Video</a></li>
+                    <li><a href="fantasy.html#cumpara">Cumpără!</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="horror.html" class="nav-link">Horror/Thriller</a>
+                <ul class="submeniu">
+                    <li><a href="#sinopsis">Sinopsis</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#cumpara">Cumpără!</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="teatru.html" class="nav-link">Piese de teatru</a>
+                <ul class="submeniu">
+                    <li><a href="teatru.html#sinopsis">Sinopsis</a></li>
+                    <li><a href="teatru.html#video">Video</a></li>
+                    <li><a href="teatru.html#cumpara">Cumpără!</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="top-content">
+            <div id="carte" class="section-content">
+                <button id="buton">Deschide cartea!</button>
+                <figure>
+                    <img id="imagine_de_schimbat" src="poze/carte_inchisa.jpeg.png" width="200" height="300" alt="Carte">
+                </figure>
+            </div>
+        </section>
+
+        <section id="genuri" class="section-content">
+            <h2>Genurile de cărți despre care vom discuta sunt:</h2>
+            <ul>
+                <li><a href="#clasici-section">Clasici</a></li>
+                <li><a href="#fantasy-section">Fantasy</a></li>
+                <li><a href="#horror-section">Horror/Thriller</a></li>
+                <li><a href="#teatru-section">Piese de teatru</a></li>
+            </ul>
+        </section>
+
+        <section id="introducere" class="section-content">
+            <h2>Despre ce vom discuta?</h2>
+            <p>Fiecare gen va avea o pagină specială cu câte o recomandare de carte, alături de un sinopsis, dar și un clip video în care este prezentată mai amănunțit cartea</p>
+        </section>
+
+        <section id="contact-form" class="section-content">
+            <h2>Contactează-ne</h2>
+            <form id="contact" method="post" action="#">
+                <div class="form-group">
+                    <label for="name">Nume:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Trimite</button>
+            </form>
+        </section>
+
+        <section id="curiozitati" class="section-content">
+            <h2>Curiozități despre cărți</h2>
+            <p>Știați că:</p>
+            <ul>
+                <li>Prima carte tipărită vreodată a fost <strong>„Biblia lui Gutenberg"</strong> în 1455?</li>
+                <li>Cea mai lungă propoziție scrisă vreodată se găsește în cartea <strong>„Les Misérables"</strong> de Victor Hugo?</li>
+                <li>Cărțile pot crește empatia cititorilor prin identificarea cu personaje complexe?</li>
+            </ul>
+        </section>
+
+        <section id="fun-facts" class="section-content">
+            <h2>Top 3 cele mai vândute cărți din lume</h2>
+            <ol>
+                <li><strong>„Biblia"</strong> - cu miliarde de exemplare vândute.</li>
+                <li><strong>„Citatele președintelui Mao"</strong> - o lectură obligatorie în China.</li>
+                <li><strong>„Harry Potter"</strong> - seria care a cucerit inimile cititorilor de toate vârstele.</li>
+            </ol>
+        </section>
+
+        <section id="beneficii-citit" class="section-content">
+            <h2>Beneficiile lecturii</h2>
+            <p>Lectura nu este doar o activitate plăcută, ci și benefică pentru sănătatea mentală și fizică. Iată câteva beneficii:</p>
+            <ul>
+                <li><strong>Reduce stresul:</strong> Citirea timp de doar 6 minute pe zi poate reduce stresul cu până la 68%.</li>
+                <li><strong>Îmbunătățește vocabularul:</strong> Citind mai mult, vei descoperi cuvinte noi și expresii interesante.</li>
+                <li><strong>Stimulează imaginația:</strong> Cititul activează părțile creierului responsabile cu creativitatea.</li>
+                <li><strong>Ajută la prevenirea bolilor cognitive:</strong> Studiile arată că lectura regulată poate întârzia apariția demenței.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Sperăm că v-au ajutat recomandările noastre!</h3>
+            <h4>Mai multe cărți gasiți pe siteul celor de la <a href="https://carturesti.ro/" target="_blank">Cărturești</a>!</h4>
+            <h5>Un site cu cărți PDF gratis <a href="https://z-lib.io/" target="_blank">aici</a>!</h5>
+            <h6><a href="https://www.reddit.com/r/RecomandariCarti_RO/" target="_blank">Let's have an open discussion!</a></h6>
+            <nav class="footer-nav">
+                <a href="#top">Back to Top</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
